@@ -1,9 +1,9 @@
 var App = module.exports = function() {
-  this.name = 'iphone-app';
+  this.name = 'temp-sample';
 };
 
 App.prototype.init = function(zetta) {
-  zetta.observe('type="iphone"')
+  zetta.observe('type="temperature"')
     .subscribe(function(device) {
       zetta.expose(device);
       console.log(device);
